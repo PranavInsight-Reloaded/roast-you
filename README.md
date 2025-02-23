@@ -11,7 +11,7 @@
   ![Screenshot From 2025-02-23 18-36-48](https://github.com/user-attachments/assets/d978338b-eeba-42f4-a185-d853d6d14005)
 
   # Problem:
-  - Doesn't support mobile phones due to lack of tech,
+  - Doesn't support mobile phones due to lack of tech(cuz i literally did it as my hobby),
   - Need to bring up chatgpt extension to make a PvB(player vs bot) roast,
   - Could improve...
  
