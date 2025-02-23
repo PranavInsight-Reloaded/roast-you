@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roast Battle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+            background: #f8f8f8;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #ff4500;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .winner {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔥 Roast Battle 🔥</h1>
+        <input type="text" id="roastOne" placeholder="Roaster One, drop your fire...">
+        <input type="text" id="roastTwo" placeholder="Roaster Two, respond!">
+        <button onclick="judgeRoasts()">🔥 Battle! 🔥</button>
+        <p class="winner" id="winner"></p>
+    </div>
+
+    <script>
+        function judgeRoasts() {
+            let roastOne = document.getElementById('roastOne').value;
+            let roastTwo = document.getElementById('roastTwo').value;
+            
+            let scoreOne = roastOne.length;
+            let scoreTwo = roastTwo.length;
+            
+            let winnerText = "";
+            if (scoreOne === scoreTwo) {
+                winnerText = "It's a tie! Try harder next time!";
+            } else {
+                winnerText = scoreOne > scoreTwo ? "Roaster One wins! 🔥" : "Roaster Two wins! 🔥";
+            }
+            
+            document.getElementById('winner').innerText = winnerText;
+        }
+    </script>
+</body>
+</html>
