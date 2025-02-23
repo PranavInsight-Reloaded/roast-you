@@ -44,6 +44,7 @@
         <input type="text" id="roastOne" placeholder="Roaster One, drop your fire...">
         <input type="text" id="roastTwo" placeholder="Roaster Two, respond!">
         <button onclick="judgeRoasts()">🔥 Battle! 🔥</button>
+        <button onclick="resetBattle()">🔄 Restart 🔄</button>
         <p class="winner" id="winner"></p>
     </div>
 
@@ -64,6 +65,13 @@
             
             document.getElementById('winner').innerText = winnerText;
         }
+
+        function resetBattle() {
+            document.getElementById('roastOne').value = "";
+            document.getElementById('roastTwo').value = "";
+            document.getElementById('winner').innerText = "";
+        }
     </script>
 </body>
 </html>
+
